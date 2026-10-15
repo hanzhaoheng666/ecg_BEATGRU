@@ -1,0 +1,51 @@
+{
+  "metrics": {
+    "n_samples": 184459,
+    "accuracy": 0.8579413311359164,
+    "balanced_accuracy": 0.6569026871804405,
+    "macro_f1": 0.569412847215589,
+    "sv_f1": 0.39092849821492176,
+    "N_precision": 0.9463824372437373,
+    "S_precision": 0.4961022087483759,
+    "V_precision": 0.3591319773918066,
+    "N_recall": 0.9072085558861761,
+    "S_recall": 0.18783307370664917,
+    "V_recall": 0.8756664319484961,
+    "N_f1": 0.9263815452169235,
+    "S_f1": 0.2724947963128159,
+    "V_f1": 0.5093622001170276,
+    "confusion_matrix": [
+      [
+        147259,
+        2101,
+        12961
+      ],
+      [
+        7333,
+        2291,
+        2573
+      ],
+      [
+        1010,
+        226,
+        8705
+      ]
+    ]
+  },
+  "n_target_records": 78,
+  "target_dataset": "mit_bih_svdb",
+  "target_split": "all",
+  "lead_selector": "canonical_first",
+  "protocol": {
+    "strict_Ri_plus_delay_online": true,
+    "conditional_on_detected_or_annotated_rpeaks": true,
+    "input": "frozen derivative-CNN logits (raw_d1_d2) + causal RR + recurrent state",
+    "derivative_definition": "first/second sample differences inside legal R_i-lookback..R_i+delay window only",
+    "decision_time": "R_i+200ms",
+    "state_reset": "record boundary",
+    "future_waveform": false,
+    "future_rpeak_or_post_rr": false,
+    "future_label": false,
+    "test_loaded": true
+  }
+}

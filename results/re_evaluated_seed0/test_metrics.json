@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "n_samples": 49311,
+    "accuracy": 0.9790716067408894,
+    "balanced_accuracy": 0.9180518804697245,
+    "macro_f1": 0.9131296041677691,
+    "sv_f1": 0.875262334982166,
+    "N_precision": 0.9894570135746606,
+    "S_precision": 0.7807514153371076,
+    "V_precision": 0.9558080808080808,
+    "N_recall": 0.9882719815605722,
+    "S_recall": 0.8258029395753946,
+    "V_recall": 0.9400807202732071,
+    "N_f1": 0.9888641425389755,
+    "S_f1": 0.8026455026455026,
+    "V_f1": 0.9478791673188293,
+    "confusion_matrix": [
+      [
+        43734,
+        406,
+        113
+      ],
+      [
+        293,
+        1517,
+        27
+      ],
+      [
+        173,
+        20,
+        3028
+      ]
+    ]
+  },
+  "n_test_records": 22,
+  "protocol": {
+    "strict_Ri_plus_delay_online": true,
+    "conditional_on_detected_or_annotated_rpeaks": true,
+    "input": "frozen derivative-CNN logits (raw_d1_d2) + causal RR + recurrent state",
+    "derivative_definition": "first/second sample differences inside legal R_i-lookback..R_i+delay window only",
+    "decision_time": "R_i+200ms",
+    "state_reset": "record boundary",
+    "future_waveform": false,
+    "future_rpeak_or_post_rr": false,
+    "future_label": false,
+    "test_loaded": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "protocol": "predeclared DS1-only six-fold candidate set; no threshold or target-domain tuning",
+  "selection_metric": "mean validation macro_f1; ties resolved by mean sv_f1",
+  "candidates": [
+    {"name": "gru_h128_c075_p040", "hidden": 128, "max_correction": 0.75, "power": 0.40, "lr": 0.0003},
+    {"name": "gru_h192_c100_p060", "hidden": 192, "max_correction": 1.00, "power": 0.60, "lr": 0.0002},
+    {"name": "gru_h256_c050_p060", "hidden": 256, "max_correction": 0.50, "power": 0.60, "lr": 0.0002}
+  ]
+}

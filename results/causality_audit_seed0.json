@@ -1,0 +1,14 @@
+{
+  "future_waveform_prefix_max_abs_error": 0.0,
+  "prefix_replay_max_abs_error": 1.33514404296875e-05,
+  "future_rr_and_label_prefix_max_abs_error": 0.0,
+  "record_reset_max_abs_error": 0.0,
+  "tolerance": 0.0001,
+  "status": "PASS",
+  "protocol": {
+    "future_waveform": false,
+    "future_rpeak_or_post_rr": false,
+    "future_label": false,
+    "state_reset": "record boundary"
+  }
+}

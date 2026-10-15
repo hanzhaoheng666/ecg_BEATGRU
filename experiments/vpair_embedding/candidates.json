@@ -1,0 +1,9 @@
+{
+  "protocol": "Predeclared DS1-only comparison: two source-matched leads; no external labels, thresholds, or target adaptation.",
+  "selection_metric": "mean validation macro_f1; ties resolved by mean sv_f1",
+  "candidates": [
+    {"name": "pair_logit_fixed", "history_input": "logits", "lead_swap_prob": 0.0, "hidden": 128, "max_correction": 0.75, "power": 0.40, "lr": 0.0003},
+    {"name": "pair_logit_swap", "history_input": "logits", "lead_swap_prob": 0.5, "hidden": 128, "max_correction": 0.75, "power": 0.40, "lr": 0.0003},
+    {"name": "pair_embedding_swap", "history_input": "embedding", "lead_swap_prob": 0.5, "hidden": 128, "max_correction": 0.75, "power": 0.40, "lr": 0.0003}
+  ]
+}
